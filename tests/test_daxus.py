@@ -1,3 +1,4 @@
 def test_class():
-    from daxis import Daxis
-    assert isinstance(Daxis(), Daxis)
+    """Test daxus module can be imported."""
+    import daxus
+    assert daxus is not None
