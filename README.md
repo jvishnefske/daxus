@@ -6,13 +6,8 @@ Unofficial Python library for single-shot data acquisition from DXS-100 Daxis de
 
 ```bash
 pip install daxus
-```
-
-```python
-from daxus import Daxus
-
-with Daxus('192.168.1.100', 2864) as daq:
-    print(daq.get_measurements())
+python -c "from daxus import Daxus; print('Daxus installed successfully')"
+python -c "from daxus import Daxus; d = Daxus('192.168.1.100', 2864); print(d.get_measurements())"
 ```
 
 ## Example
